@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="castleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8bbd0" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#e1bee7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#d1c4e9" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="spireGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f06292" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ba68c8" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Clouds & Stars -->
+  <circle cx="120" cy="80" r="3" fill="#ffd54f" opacity="0.8"/>
+  <circle cx="480" cy="70" r="4" fill="#ffd54f" opacity="0.8"/>
+  <circle cx="300" cy="50" r="3.5" fill="#fff" opacity="0.9"/>
+  <!-- Castle silhouette -->
+  <g fill="url(#castleGrad)">
+    <!-- Base walls -->
+    <rect x="180" y="240" width="240" height="140" rx="6"/>
+    <rect x="220" y="190" width="160" height="60"/>
+    
+    <!-- Outer Towers -->
+    <rect x="150" y="180" width="50" height="180" rx="4"/>
+    <polygon points="140,180 175,90 210,180" fill="url(#spireGrad)"/>
+    <rect x="400" y="180" width="50" height="180" rx="4"/>
+    <polygon points="390,180 425,90 460,180" fill="url(#spireGrad)"/>
+    
+    <!-- Center Grand Tower -->
+    <rect x="260" y="130" width="80" height="120" rx="4"/>
+    <polygon points="250,130 300,30 350,130" fill="url(#spireGrad)"/>
+    <polygon points="296,30 300,10 304,30" fill="#ffd54f"/>
+    <!-- Flags -->
+    <path d="M300 10 L320 18 L300 26 Z" fill="#ff4081"/>
+    <path d="M175 90 L190 98 L175 106 Z" fill="#ff80ab"/>
+    <path d="M425 90 L440 98 L425 106 Z" fill="#ff80ab"/>
+
+    <!-- Gate -->
+    <path d="M270 380 C270 330, 330 330, 330 380 Z" fill="#8e24aa" opacity="0.3"/>
+    
+    <!-- Windows -->
+    <rect x="285" y="160" width="30" height="40" rx="15" fill="#fff" opacity="0.6"/>
+    <rect x="165" y="220" width="20" height="30" rx="10" fill="#fff" opacity="0.5"/>
+    <rect x="415" y="220" width="20" height="30" rx="10" fill="#fff" opacity="0.5"/>
+  </g>
+</svg>

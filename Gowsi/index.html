@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Celebrating Gowsi's magical first birthday on November 10, 2026. A dreamy princess fairytale birthday website filled with love, joy and precious memories."/>
+  <title>Happy 1st Birthday, Princess Gowsi! 👑</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Global: Confetti Canvas -->
+<canvas id="confetti-canvas" aria-hidden="true"></canvas>
+<!-- Global: Floating hearts decoration layer -->
+<div class="floating-hearts-layer" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════
+  SECTION 1: WELCOME SPLASH SCREEN
+════════════════════════════════════════ -->
+<div id="welcome-screen" role="dialog" aria-label="Welcome to Gowsi's Birthday Website">
+  <div class="welcome-bg-sparkle" aria-hidden="true"></div>
+  <span class="balloon" style="left:4%;top:10%;--rot:-8deg;--dur:5s" aria-hidden="true">🎈</span>
+  <span class="balloon" style="right:5%;top:15%;--rot:6deg;--dur:6s;animation-delay:1s" aria-hidden="true">🎀</span>
+  <span class="balloon" style="left:12%;bottom:12%;--rot:5deg;--dur:4.5s;animation-delay:.5s" aria-hidden="true">🎈</span>
+  <span class="balloon" style="right:10%;bottom:10%;--rot:-5deg;--dur:5.5s;animation-delay:1.5s" aria-hidden="true">🌸</span>
+  <div class="welcome-content">
+    <img src="assets/images/crown.jpg" alt="Princess Crown" class="welcome-crown-img"/>
+    <h1 class="welcome-title">Gowsi</h1>
+    <p class="welcome-subtitle">"Once upon a time, a little princess named Gowsi made the world more beautiful."</p>
+    <p class="welcome-tamil" lang="ta">
+      இனிய முதல் பிறந்தநாள் வாழ்த்துகள்,<br/>
+      குட்டி இளவரசி Gowsi! 👑
+    </p>
+    <button id="btn-enter" class="btn-enter" aria-label="Enter Gowsi's Fairytale Website">
+      <span aria-hidden="true">✨</span> Enter Gowsi's Fairytale <span aria-hidden="true">✨</span>
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+  MAIN SITE (revealed after welcome click)
+════════════════════════════════════════ -->
+<div id="main-site">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg fairy-nav" aria-label="Site navigation">
+    <div class="container">
+      <a class="nav-brand" href="#hero" aria-label="Home">Gowsi 👑</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#hero">🏰 Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cake-section">🎂 Cake</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">📸 Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#wishes">💌 Wishes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#final-section">💫 Finale</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+    SECTION 2: HERO / BIRTHDAY HEADER
+  ════════════════════════════════════════ -->
+  <section id="hero" aria-labelledby="hero-title">
+    <img src="assets/images/hero_bg.jpg" alt="Magical princess fairytale background" class="hero-bg-img" aria-hidden="true"/>
+    <!-- Decorative floating stars -->
+    <span class="hero-star-decor" style="top:12%;left:5%" aria-hidden="true">⭐</span>
+    <span class="hero-star-decor" style="top:20%;right:8%;animation-delay:.7s" aria-hidden="true">✨</span>
+    <span class="hero-star-decor" style="bottom:25%;left:3%;animation-delay:1.2s" aria-hidden="true">🌟</span>
+    <span class="hero-star-decor" style="bottom:30%;right:5%;animation-delay:.4s" aria-hidden="true">💫</span>
+    <div class="container hero-content">
+      <div class="row align-items-center gy-5">
+        <!-- Text column -->
+        <div class="col-lg-6">
+          <div class="hero-badge">✨ November 10, 2026 ✨</div>
+          <h1 id="hero-title" class="hero-title">
+            Happy 1st Birthday,<br/>Princess Gowsi!
+          </h1>
+          <p class="hero-subtitle">A princess doesn't need wings to fly — she has her smile 🌸</p>
+          <div class="hero-date" aria-label="Birthday: November 10, 2026">
+            <i class="bi bi-calendar-heart-fill" aria-hidden="true"></i>
+            <span>November 10, 2026 &middot; Turning One!</span>
+          </div>
+          <p class="hero-greeting-en">
+            "May your life be as bright as the stars that shine above,<br/>
+            and as warm as the love surrounding you, little princess."
+          </p>
+          <p class="hero-greeting-ta" lang="ta">
+            குட்டி இளவரசி, உன் வாழ்க்கை மலர்களால் நிரம்பி வழியட்டும்! 🌸
+          </p>
+          <div class="mt-4">
+            <a href="#cake-section" class="btn-explore" aria-label="Scroll to birthday cake section">
+              <i class="bi bi-stars" aria-hidden="true"></i> Explore the Celebration
+            </a>
+          </div>
+        </div>
+        <!-- Photo column -->
+        <div class="col-lg-6">
+          <div class="hero-photo-wrap">
+            <div class="hero-photo-frame">
+              <img src="assets/images/crown.jpg" alt="" class="hero-crown-float" aria-hidden="true"/>
+              <img src="assets/images/gowsi_hero.jpg"
+                   alt="Princess Gowsi — first birthday portrait"
+                   class="hero-photo-img"
+                   id="hero-photo"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+    SECTION 3: BIRTHDAY CAKE INTERACTION
+  ════════════════════════════════════════ -->
+  <section id="cake-section" aria-labelledby="cake-title">
+    <!-- Decorative balloons -->
+    <span class="balloon" style="left:2%;top:20%;--rot:-8deg;--dur:5s" aria-hidden="true">🎈</span>
+    <span class="balloon" style="right:3%;top:30%;--rot:6deg;--dur:6s;animation-delay:1s" aria-hidden="true">🎀</span>
+    <span class="fs-star" style="top:10%;left:10%;animation-delay:.3s" aria-hidden="true">✨</span>
+    <span class="fs-star" style="top:15%;right:12%;animation-delay:1.1s" aria-hidden="true">⭐</span>
+
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-label">🎂 Interactive</span>
+        <h2 id="cake-title" class="section-title">Make a Birthday Wish!</h2>
+        <div class="decor-line"></div>
+        <p class="section-caption">Tap the button, blow out the candle and make a wish for our princess 🌟</p>
+      </div>
+
+      <div class="row align-items-center justify-content-center gy-5">
+        <!-- Cake image with CSS candle -->
+        <div class="col-md-5 text-center reveal-left">
+          <div class="cake-wrap d-inline-block position-relative">
+            <img src="assets/images/cake.jpg"
+                 alt="Beautiful pastel princess birthday cake"
+                 class="cake-img"
+                 id="cake-img"/>
+            <!-- CSS fallback if image fails -->
+            <div id="css-cake" style="display:none;font-size:10rem;line-height:1" aria-hidden="true">🎂</div>
+            <!-- Interactive candle overlay -->
+            <div class="candle-overlay" aria-hidden="true">
+              <div class="smoke-puff" id="smoke">
+                <div class="smoke-particle" style="animation-delay:0s"></div>
+                <div class="smoke-particle" style="animation-delay:.2s"></div>
+                <div class="smoke-particle" style="animation-delay:.4s"></div>
+              </div>
+              <div class="flame" id="flame" role="img" aria-label="Candle flame"></div>
+              <div class="candle-stick"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wish card -->
+        <div class="col-md-5 reveal-right">
+          <div class="wish-card">
+            <div style="font-size:3rem;margin-bottom:.5rem" aria-hidden="true">🌟</div>
+            <h3 style="font-family:var(--font-script);font-size:2rem;color:var(--deep-rose);margin-bottom:.8rem">
+              Blow Out the Candle
+            </h3>
+            <p style="font-family:var(--font-serif);font-style:italic;color:#9b7ab8;font-size:.95rem;margin-bottom:1.5rem">
+              Close your eyes, make a wish with all your heart,<br/>
+              and let the magic begin! ✨
+            </p>
+            <!-- Message shown after wish -->
+            <div class="wish-message" id="wish-message" aria-live="polite">
+              <div style="font-size:2rem;margin-bottom:.6rem" aria-hidden="true">🎊💕🎊</div>
+              <p><strong>Yay! The wish is made, Gowsi!</strong></p>
+              <p>May every single one of your dreams come true, little princess.<br/>
+              You deserve all the magic in the world! 🌸✨</p>
+              <p class="mt-2" style="font-family:var(--font-tamil);color:var(--gold);font-size:.9rem" lang="ta">
+                உன் ஆசை நிறைவேறட்டும், குட்டி இளவரசி! 💛
+              </p>
+            </div>
+            <!-- Interaction buttons -->
+            <div class="d-flex flex-wrap justify-content-center">
+              <button id="btn-make-wish" class="btn-wish"
+                      aria-label="Make a birthday wish and blow out the candle">
+                🎂 Make a Birthday Wish!
+              </button>
+              <button id="btn-replay" class="btn-wish"
+                      style="display:none;background:linear-gradient(135deg,var(--lavender),var(--soft-lav))"
+                      aria-label="Relight candle">
+                🕯️ Light the Candle Again
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+    SECTION 4: PHOTO GALLERY (Scrapbook)
+  ════════════════════════════════════════ -->
+  <section id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+
+      <div class="text-center mb-4 reveal">
+        <span class="section-label">📸 Scrapbook</span>
+        <h2 id="gallery-title" class="section-title">Gowsi's First-Year Memories</h2>
+        <div class="decor-line"></div>
+        <p class="section-caption">Every smile, every milestone — captured forever 💕</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="gallery-filter" role="group" aria-label="Gallery category filter">
+        <button class="filter-pill active" data-cat="all" aria-pressed="true">All Memories ✨</button>
+        <button class="filter-pill" data-cat="smiles" aria-pressed="false">Little Smiles 😊</button>
+        <button class="filter-pill" data-cat="first" aria-pressed="false">First Moments 🌟</button>
+        <button class="filter-pill" data-cat="family" aria-pressed="false">Family Love 💕</button>
+      </div>
+
+      <!-- Polaroid Gallery Grid -->
+      <div class="row g-4 justify-content-center">
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:-3deg" role="button" tabindex="0" aria-label="Photo: That First Smile 😊">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/12167.jpg" alt="Gowsi - That First Smile 😊" loading="lazy"/>
+          <div class="caption">That First Smile 😊</div>
+          <span class="polaroid-sticker" aria-hidden="true">💕</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="first">
+        <div class="polaroid" data-cat="first" style="--rot:2deg" role="button" tabindex="0" aria-label="Photo: First Steps 👣">
+          <span class="photo-cat">First Moments</span>
+          <img src="assets/images/gowsipics/14318.jpg" alt="Gowsi - First Steps 👣" loading="lazy"/>
+          <div class="caption">First Steps 👣</div>
+          <span class="polaroid-sticker" aria-hidden="true">⭐</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="family">
+        <div class="polaroid" data-cat="family" style="--rot:-2deg" role="button" tabindex="0" aria-label="Photo: Amma's Love 💕">
+          <span class="photo-cat">Family Love</span>
+          <img src="assets/images/gowsipics/14319.jpg" alt="Gowsi - Amma's Love 💕" loading="lazy"/>
+          <div class="caption">Amma's Love 💕</div>
+          <span class="polaroid-sticker" aria-hidden="true">🌸</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:3deg" role="button" tabindex="0" aria-label="Photo: Little Laughter 😂">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/14321.jpg" alt="Gowsi - Little Laughter 😂" loading="lazy"/>
+          <div class="caption">Little Laughter 😂</div>
+          <span class="polaroid-sticker" aria-hidden="true">💖</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="first">
+        <div class="polaroid" data-cat="first" style="--rot:-4deg" role="button" tabindex="0" aria-label="Photo: Birthday Queen 👑">
+          <span class="photo-cat">First Moments</span>
+          <img src="assets/images/gowsipics/16224.jpg" alt="Gowsi - Birthday Queen 👑" loading="lazy"/>
+          <div class="caption">Birthday Queen 👑</div>
+          <span class="polaroid-sticker" aria-hidden="true">✨</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="family">
+        <div class="polaroid" data-cat="family" style="--rot:2.5deg" role="button" tabindex="0" aria-label="Photo: Appa's Princess 🌟">
+          <span class="photo-cat">Family Love</span>
+          <img src="assets/images/gowsipics/17654.jpg" alt="Gowsi - Appa's Princess 🌟" loading="lazy"/>
+          <div class="caption">Appa's Princess 🌟</div>
+          <span class="polaroid-sticker" aria-hidden="true">💛</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:-1.5deg" role="button" tabindex="0" aria-label="Photo: Playful Moments 🌸">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/19054.jpg" alt="Gowsi - Playful Moments 🌸" loading="lazy"/>
+          <div class="caption">Playful Moments 🌸</div>
+          <span class="polaroid-sticker" aria-hidden="true">🎀</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="first">
+        <div class="polaroid" data-cat="first" style="--rot:3.5deg" role="button" tabindex="0" aria-label="Photo: First Words 💬">
+          <span class="photo-cat">First Moments</span>
+          <img src="assets/images/gowsipics/35131.jpg" alt="Gowsi - First Words 💬" loading="lazy"/>
+          <div class="caption">First Words 💬</div>
+          <span class="polaroid-sticker" aria-hidden="true">💫</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:-2.5deg" role="button" tabindex="0" aria-label="Photo: Little Princess 👑">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/49996.jpg" alt="Gowsi - Little Princess 👑" loading="lazy"/>
+          <div class="caption">Little Princess 👑</div>
+          <span class="polaroid-sticker" aria-hidden="true">💜</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="first">
+        <div class="polaroid" data-cat="first" style="--rot:1.5deg" role="button" tabindex="0" aria-label="Photo: Precious Moments 🌟">
+          <span class="photo-cat">First Moments</span>
+          <img src="assets/images/gowsipics/49997.jpg" alt="Gowsi - Precious Moments 🌟" loading="lazy"/>
+          <div class="caption">Precious Moments 🌟</div>
+          <span class="polaroid-sticker" aria-hidden="true">🌟</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="family">
+        <div class="polaroid" data-cat="family" style="--rot:-3.5deg" role="button" tabindex="0" aria-label="Photo: Family Bliss 💗">
+          <span class="photo-cat">Family Love</span>
+          <img src="assets/images/gowsipics/49999.jpg" alt="Gowsi - Family Bliss 💗" loading="lazy"/>
+          <div class="caption">Family Bliss 💗</div>
+          <span class="polaroid-sticker" aria-hidden="true">💗</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:2deg" role="button" tabindex="0" aria-label="Photo: Pure Joy 💫">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/62350.jpg" alt="Gowsi - Pure Joy 💫" loading="lazy"/>
+          <div class="caption">Pure Joy 💫</div>
+          <span class="polaroid-sticker" aria-hidden="true">✨</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="first">
+        <div class="polaroid" data-cat="first" style="--rot:-1deg" role="button" tabindex="0" aria-label="Photo: Growing Strong 🌱">
+          <span class="photo-cat">First Moments</span>
+          <img src="assets/images/gowsipics/63440.jpg" alt="Gowsi - Growing Strong 🌱" loading="lazy"/>
+          <div class="caption">Growing Strong 🌱</div>
+          <span class="polaroid-sticker" aria-hidden="true">🌺</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="family">
+        <div class="polaroid" data-cat="family" style="--rot:4deg" role="button" tabindex="0" aria-label="Photo: All Our Love 💕">
+          <span class="photo-cat">Family Love</span>
+          <img src="assets/images/gowsipics/63442.jpg" alt="Gowsi - All Our Love 💕" loading="lazy"/>
+          <div class="caption">All Our Love 💕</div>
+          <span class="polaroid-sticker" aria-hidden="true">💕</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="smiles">
+        <div class="polaroid" data-cat="smiles" style="--rot:-2deg" role="button" tabindex="0" aria-label="Photo: Magic Moments ✨">
+          <span class="photo-cat">Little Smiles</span>
+          <img src="assets/images/gowsipics/17648.jpg" alt="Gowsi - Magic Moments ✨" loading="lazy"/>
+          <div class="caption">Magic Moments ✨</div>
+          <span class="polaroid-sticker" aria-hidden="true">🎀</span>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 reveal" data-cat="family">
+        <div class="polaroid" data-cat="family" style="--rot:1deg" role="button" tabindex="0" aria-label="Photo: Our Princess 👑">
+          <span class="photo-cat">Family Love</span>
+          <img src="assets/images/gowsipics/19038.jpg" alt="Gowsi - Our Princess 👑" loading="lazy"/>
+          <div class="caption">Our Princess 👑</div>
+          <span class="polaroid-sticker" aria-hidden="true">👑</span>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <div class="lightbox-inner">
+        <button class="lb-close" id="lb-close" aria-label="Close photo viewer">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <img id="lb-img" src="" alt="" class="lightbox-img"/>
+        <p id="lb-caption" class="lightbox-caption"></p>
+        <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">
+          <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo">
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+    SECTION 5: BIRTHDAY WISHES
+  ════════════════════════════════════════ -->
+  <section id="wishes" aria-labelledby="wishes-title">
+    <div class="container">
+
+      <div class="text-center mb-5 reveal">
+        <span class="section-label">💌 Messages of Love</span>
+        <h2 id="wishes-title" class="section-title">Birthday Wishes</h2>
+        <div class="decor-line"></div>
+        <p class="section-caption">From hearts filled with love, to our little princess 💕</p>
+      </div>
+
+      <!-- Uncle's Special Letter -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 reveal">
+          <div class="uncle-wish-card">
+
+            <!-- Language toggle tabs -->
+            <div class="wish-tab-btns" role="group" aria-label="Select message language">
+              <button class="wish-tab-btn active" data-lang="en" aria-pressed="true">🇬🇧 English</button>
+              <button class="wish-tab-btn" data-lang="ta" aria-pressed="false">🇮🇳 தமிழ்</button>
+            </div>
+
+            <div class="mb-3">
+              <span class="section-label">Special Letter from Uncle</span>
+              <div style="font-family:var(--font-script);font-size:1.6rem;color:var(--deep-rose)">
+                A Letter to My Little Princess 👑
+              </div>
+            </div>
+
+            <!-- English version -->
+            <p class="wish-body" id="uncle-msg-en">
+              To my sweetest little princess, Gowsi,<br/><br/>
+              Happy first birthday, my little angel! You may be too little to understand
+              these words today, but I hope one day you will read them and feel how deeply
+              you have always been loved. May your life be filled with beautiful dreams,
+              kind people, endless laughter and countless reasons to smile. Keep growing,
+              exploring and spreading your adorable little magic everywhere you go.<br/><br/>
+              With all my love, hugs and blessings,
+            </p>
+
+            <!-- Tamil version (hidden by default) -->
+            <p class="wish-body-ta" id="uncle-msg-ta" lang="ta">
+              என் அன்பான குட்டி இளவரசி Gowsi-க்கு,<br/><br/>
+              இனிய முதல் பிறந்தநாள் வாழ்த்துகள், என் சிறிய தேவதை! இன்று இந்த
+              வார்த்தைகளை புரிந்து கொள்ள உன்னால் இயலாது, ஆனால் ஒரு நாள் நீ
+              இவற்றை படிக்கும் போது, நீ எவ்வளவு ஆழமாக நேசிக்கப்பட்டாய் என்பதை
+              உணர்வாய். உன் வாழ்க்கை அழகான கனவுகளாலும், இனிய மக்களாலும்,
+              இடைவிடாத சிரிப்பாலும் நிரம்பி வழியட்டும். வளர்ந்து கொண்டே இரு,
+              உன் அற்புதமான இளவரசி மந்திரத்தை எங்கும் பரப்பிக் கொண்டே இரு.<br/><br/>
+              என் அன்பு, அரவணைப்பு மற்றும் ஆசீர்வாதங்கள் அனைத்துடன்,
+            </p>
+
+            <div class="wish-from">— Your loving Uncle 💕</div>
+            <div class="mt-3" style="font-size:1.3rem;letter-spacing:6px" aria-hidden="true">
+              ⭐ 💕 ✨ 💕 ⭐
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Family Wish Cards -->
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="mini-wish-card">
+            <span class="mini-wish-heart" aria-hidden="true">💗</span>
+            <div class="mini-wish-icon" aria-hidden="true">👨&zwj;👩&zwj;👧</div>
+            <div class="mini-wish-name">Amma &amp; Appa</div>
+            <div class="mini-wish-role">Parents</div>
+            <p class="mini-wish-text">
+              "Our little Gowsi, you are the greatest gift life has ever given us.
+              Every day with you is a beautiful miracle. We love you more than all
+              the stars in the sky. Happy birthday, our darling princess! 👑"
+            </p>
+            <p class="mini-wish-text mt-2"
+               style="font-family:var(--font-tamil);font-size:.82rem;color:var(--gold)" lang="ta">
+              குட்டி Gowsi, நீ எங்கள் இதயத்தின் இளவரசி! 💛
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal" style="transition-delay:.15s">
+          <div class="mini-wish-card">
+            <span class="mini-wish-heart" aria-hidden="true">💛</span>
+            <div class="mini-wish-icon" aria-hidden="true">👴👵</div>
+            <div class="mini-wish-name">Paati &amp; Thatha</div>
+            <div class="mini-wish-role">Grandparents</div>
+            <p class="mini-wish-text">
+              "Our precious granddaughter, you have brought so much joy and sunshine
+              into our lives. May God bless you with a lifetime of happiness and
+              good health. You are our heart's treasure! 🌟"
+            </p>
+            <p class="mini-wish-text mt-2"
+               style="font-family:var(--font-tamil);font-size:.82rem;color:var(--gold)" lang="ta">
+              பாட்டி &amp; தாத்தாவின் செல்ல பேத்தி! ✨
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 reveal" style="transition-delay:.3s">
+          <div class="mini-wish-card">
+            <span class="mini-wish-heart" aria-hidden="true">💜</span>
+            <div class="mini-wish-icon" aria-hidden="true">🌸</div>
+            <div class="mini-wish-name">All the Family</div>
+            <div class="mini-wish-role">Family &amp; Friends</div>
+            <p class="mini-wish-text">
+              "Little Gowsi, you are surrounded by so much love from everyone around you.
+              May your first birthday be just the beginning of a life full of beautiful
+              adventures and endless joy. We love you! 🎉"
+            </p>
+            <p class="mini-wish-text mt-2"
+               style="font-family:var(--font-tamil);font-size:.82rem;color:var(--gold)" lang="ta">
+              எல்லோரின் அன்பும் உன்னோடு! 🌺
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+    SECTION 6: FINAL EMOTIONAL SECTION
+  ════════════════════════════════════════ -->
+  <section id="final-section" aria-labelledby="final-title">
+    <!-- Decorative stars -->
+    <span class="fs-star" style="top:8%;left:6%" aria-hidden="true">✨</span>
+    <span class="fs-star" style="top:12%;right:8%;animation-delay:.8s" aria-hidden="true">⭐</span>
+    <span class="fs-star" style="top:40%;left:3%;animation-delay:1.4s" aria-hidden="true">💫</span>
+    <span class="fs-star" style="bottom:20%;left:8%;animation-delay:.3s" aria-hidden="true">🌟</span>
+    <span class="fs-star" style="bottom:15%;right:6%;animation-delay:1.2s" aria-hidden="true">✨</span>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <!-- Final photo with star ring -->
+          <div class="text-center mb-4 reveal">
+            <div style="position:relative;display:inline-block">
+              <img src="assets/images/gowsi_final.jpg"
+                   alt="Princess Gowsi — forever our little princess"
+                   class="final-photo-img"
+                   id="final-photo"/>
+              <span style="position:absolute;top:-15px;left:-15px;font-size:1.6rem;animation:twinkle 2s ease-in-out infinite" aria-hidden="true">⭐</span>
+              <span style="position:absolute;top:-10px;right:-15px;font-size:1.3rem;animation:twinkle 2s ease-in-out .5s infinite" aria-hidden="true">✨</span>
+              <span style="position:absolute;bottom:-10px;left:-12px;font-size:1.2rem;animation:twinkle 2s ease-in-out 1s infinite" aria-hidden="true">💫</span>
+              <span style="position:absolute;bottom:-15px;right:-10px;font-size:1.5rem;animation:twinkle 2s ease-in-out 1.5s infinite" aria-hidden="true">🌟</span>
+            </div>
+          </div>
+
+          <div class="text-center reveal">
+            <h2 id="final-title" class="final-title">Our Princess, Forever 👑</h2>
+            <div class="decor-line"></div>
+          </div>
+
+          <div class="text-center reveal">
+            <p class="final-message">
+              "You are our little princess today and forever. May your life always be filled
+              with love, laughter, happiness, and beautiful memories. Keep smiling,
+              keep shining, and keep spreading your magical light everywhere you go, Gowsi."
+            </p>
+            <p class="final-message" style="font-family:var(--font-tamil)" lang="ta">
+              "நீ இன்றும், என்றும் எங்கள் இளவரசி. அன்பாலும், சிரிப்பாலும்,
+              மகிழ்ச்சியாலும் நிரம்பிய வாழ்க்கை உனக்கு கிடைக்கட்டும்." 💕
+            </p>
+            <div style="font-size:2.5rem;margin:1.5rem 0;letter-spacing:8px" aria-hidden="true">
+              💕 ✨ 👑 ✨ 💕
+            </div>
+            <div style="font-family:var(--font-script);font-size:2rem;color:var(--deep-rose);margin-bottom:2rem">
+              Happy 1st Birthday, Princess Gowsi!
+            </div>
+            <button id="btn-relive" class="btn-relive" aria-label="Return to gallery">
+              <i class="bi bi-images" aria-hidden="true"></i> Relive the Memories
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <span class="footer-brand">Gowsi 👑</span>
+    <p>
+      <span style="color:var(--rose)" aria-hidden="true">💕 💕 💕</span>
+      Made with love for our little princess
+      <span style="color:var(--rose)" aria-hidden="true">💕 💕 💕</span>
+    </p>
+    <p style="margin-top:.4rem">
+      Celebrating Gowsi's 1st Birthday &middot; November 10, 2026
+    </p>
+    <p style="margin-top:.3rem;font-family:var(--font-tamil);color:rgba(255,255,255,.5);font-size:.78rem" lang="ta">
+      குட்டி இளவரசியை நேசிக்கும் குடும்பத்தினர் உருவாக்கியது 🌸
+    </p>
+  </footer>
+
+</div><!-- /main-site -->
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Site JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

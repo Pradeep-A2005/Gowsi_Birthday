@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#e1bee7"/>
+    </linearGradient>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#b39ddb" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Soft fairy circle -->
+  <circle cx="250" cy="220" r="140" fill="url(#sparkle)"/>
+  
+  <!-- Subtle decorative corner lace -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M20 50 A30 30 0 0 1 50 20"/>
+    <path d="M30 60 A30 30 0 0 1 60 30"/>
+    <path d="M480 50 A30 30 0 0 0 450 20"/>
+    <path d="M470 60 A30 30 0 0 0 440 30"/>
+    <path d="M20 450 A30 30 0 0 0 50 480"/>
+    <path d="M480 450 A30 30 0 0 1 450 480"/>
+  </g>
+
+  <!-- Central Emblem Container -->
+  <g transform="translate(190, 140) scale(1)">
+    <circle cx="60" cy="50" r="46" fill="#ffffff" opacity="0.9" filter="url(#cardShadow)"/>
+    <circle cx="60" cy="40" r="18" fill="none" stroke="#ba68c8" stroke-width="4"/><circle cx="60" cy="40" r="10" fill="#ff80ab"/><rect x="57" y="58" width="6" height="25" rx="3" fill="#ba68c8"/>
+  </g>
+
+  <!-- Badge Pill -->
+  <g transform="translate(170, 275)">
+    <rect width="160" height="30" rx="15" fill="#ffffff" opacity="0.95" filter="url(#cardShadow)"/>
+    <text x="80" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#ab47bc" text-anchor="middle">✨ Playtime ✨</text>
+  </g>
+
+  <!-- Titles -->
+  <text x="250" y="340" font-family="'Cinzel Decorative', 'Georgia', serif" font-size="22" font-weight="bold" fill="#4a154b" text-anchor="middle">Curious Little Explorer</text>
+  <text x="250" y="375" font-family="'Segoe UI', sans-serif" font-size="17" fill="#6a1b9a" text-anchor="middle">ஆச்சர்யப் பார்வை</text>
+  
+  <text x="250" y="420" font-family="'Segoe UI', sans-serif" font-size="13" fill="#880e4f" text-anchor="middle" opacity="0.8">Replace with Gowsi's photograph</text>
+  <text x="250" y="440" font-family="'Segoe UI', sans-serif" font-size="12" fill="#880e4f" text-anchor="middle" opacity="0.65">உங்களின் அழகிய புகைப்படத்தை இங்கு சேர்க்கவும்</text>
+</svg>

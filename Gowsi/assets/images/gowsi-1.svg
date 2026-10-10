@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+    <radialGradient id="sparkle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#b39ddb" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="500" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Soft fairy circle -->
+  <circle cx="250" cy="220" r="140" fill="url(#sparkle)"/>
+  
+  <!-- Subtle decorative corner lace -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M20 50 A30 30 0 0 1 50 20"/>
+    <path d="M30 60 A30 30 0 0 1 60 30"/>
+    <path d="M480 50 A30 30 0 0 0 450 20"/>
+    <path d="M470 60 A30 30 0 0 0 440 30"/>
+    <path d="M20 450 A30 30 0 0 0 50 480"/>
+    <path d="M480 450 A30 30 0 0 1 450 480"/>
+  </g>
+
+  <!-- Central Emblem Container -->
+  <g transform="translate(190, 140) scale(1)">
+    <circle cx="60" cy="50" r="46" fill="#ffffff" opacity="0.9" filter="url(#cardShadow)"/>
+    <circle cx="60" cy="50" r="18" fill="#d7ccc8"/><circle cx="48" cy="35" r="7" fill="#bcaaa4"/><circle cx="72" cy="35" r="7" fill="#bcaaa4"/><circle cx="55" cy="46" r="2.5" fill="#5d4037"/><circle cx="65" cy="46" r="2.5" fill="#5d4037"/><ellipse cx="60" cy="54" rx="5" ry="3.5" fill="#fff"/><circle cx="60" cy="53" r="2" fill="#5d4037"/>
+  </g>
+
+  <!-- Badge Pill -->
+  <g transform="translate(170, 275)">
+    <rect width="160" height="30" rx="15" fill="#ffffff" opacity="0.95" filter="url(#cardShadow)"/>
+    <text x="80" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#ab47bc" text-anchor="middle">✨ First Smiles ✨</text>
+  </g>
+
+  <!-- Titles -->
+  <text x="250" y="340" font-family="'Cinzel Decorative', 'Georgia', serif" font-size="22" font-weight="bold" fill="#4a154b" text-anchor="middle">Sweet Little Smiles</text>
+  <text x="250" y="375" font-family="'Segoe UI', sans-serif" font-size="17" fill="#6a1b9a" text-anchor="middle">மழலை புன்னகை</text>
+  
+  <text x="250" y="420" font-family="'Segoe UI', sans-serif" font-size="13" fill="#880e4f" text-anchor="middle" opacity="0.8">Replace with Gowsi's photograph</text>
+  <text x="250" y="440" font-family="'Segoe UI', sans-serif" font-size="12" fill="#880e4f" text-anchor="middle" opacity="0.65">உங்களின் அழகிய புகைப்படத்தை இங்கு சேர்க்கவும்</text>
+</svg>
